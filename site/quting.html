@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<title>去听分享</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/hehe.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="qt-share" data-role="page" id="pageone">
+			<header class="borderb">
+				<h2>包青天</h2>
+				<dl>
+					<dt class="cover"><img src="images/cover-img1.png" alt=""></dt>
+					<dd class="intro">
+						<p class="tit elli">演播：张勇 作者：张宏志</p>
+						<p class="melli four">[现代文学]精心打造，每期一个故事，情景化演绎，制作精良，强力推荐的有声剧！精心打造，每期一个故事，情景化演绎情景化演绎情景化</p>
+					</dd>
+				</dl>
+			</header>
+			<ul class="audio-list" id="audioList">
+				<h3>共54章节</h3>
+				<li>
+					<em>1</em>
+					<span class="tit elli">包青天</span>
+					<span class="play">免费试听<i class="on"></i></span>
+				</li>
+				<li>
+					<em>2</em>
+					<span class="tit elli">包青天</span>
+					<span class="play">免费试听<i class="on"></i></span>
+				</li>
+				<li>
+					<em>3</em>
+					<span class="tit elli">包青天</span>
+					<span class="play">免费试听<i class="on"></i></span>
+				</li>
+				<li>
+					<em>54</em>
+					<span class="tit elli">包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天包青天</span>
+					<span class="play">免费试听<i class="off"></i></span>
+				</li>
+				<li>
+					<em>100</em>
+					<span class="tit elli">包青天</span>
+					<span class="play">免费试听<i class="off"></i></span>
+				</li>
+				<li>
+					<em>100</em>
+					<span class="tit elli">包青天</span>
+					<span class="play">免费试听<i class="off"></i></span>
+				</li>
+			</ul>
+			<footer>
+				<div class="qtlogo"><img src="images/qt-logo.png" alt=""></div>
+				<div class="ad">
+					<p class="tit">去听app</p>
+					<p class="txt">您随身的有声书店</p>
+				</div>
+				<div class="link"><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.android.jacoustic" target="_blank">立即打开</a></div>
+			</footer>
+		</div>
+		<script>
+			//点击播放，点击暂停 
+			$(function(){
+				$("#audioList li").click(function(){
+					var that = $(this).find("i")
+					if($(that).attr("class") == "on"){//点击播放
+						$(that).addClass("off").removeClass("on");
+					}else{//点击停止
+						$(that).addClass("on").removeClass("off");
+					}
+				});
+			})
+		</script>
+	</body>
+</html>

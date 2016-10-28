@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<title>去听分享</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/hehe.css" rel="stylesheet" type="text/css">
+	</head>
+	<body style="height: 100%;">
+		<div class="qt-mtabu">
+			<header class="nav" id="nav">
+				<!-- tabTit -->
+				<div class="nav-box clearfix" id="tabTit">
+					<h2 class="on">外国文学</h2>
+					<h2>现代文学</h2>
+					<h2>纪实文学</h2>
+				</div>
+			</header>
+			<div class="placeholder"></div>
+			<!-- tabCon -->
+
+			<div id="tabCon">
+				<div class="swiper-container">
+					<ul class="audio-list swiper-wrapper">
+						<dl class="swiper-slide">
+							<a href="quting.html" target="_blank">
+								<dt class="cover">
+									<img src="images/cover-img1.png" alt=""><i class="icon"></i>
+								</dt>
+								<dd class="intro">
+									<p class="tit melli one">血色黎明血色黎明血色黎明血色黎明血色黎明</p>
+									<p class="author melli one">演播：张勇 作者：张宏志</p>
+									<p class="txt melli three">精心打造，每期一个故事，情景化演绎，制作精良，强力推荐的有声剧！精心打造，每期一个故事，情景化演绎，精制作精良强力荐．．．</p>
+								</dd>
+							</a>
+						</dl>
+					</ul>
+				</div>
+				<!-- end 外国文学 -->
+				<div class="swiper-container">
+					<ul class="audio-list swiper-wrapper" >
+						<dl class="swiper-slide">
+							<a href="quting.html" target="_blank">
+								<dt class="cover">
+									<img src="images/cover-img1.png" alt=""><i class="icon"></i>
+								</dt>
+								<dd class="intro">
+									<p class="tit melli one">1血色黎明血色黎明血色黎明血色黎明血色黎明</p>
+									<p class="author melli one">演播：张勇 作者：张宏志</p>
+									<p class="txt melli three">精心打造，每期一个故事，情景化演绎，制作精良，强力推荐的有声剧！精心打造，每期一个故事，情景化演绎，精制作精良强力荐．．．</p>
+								</dd>
+							</a>
+						</dl>
+					</ul>
+				</div>
+				<!-- end 现代文学 -->
+				<div class="swiper-container">
+					<ul class="audio-list swiper-wrapper" >
+						<dl class="swiper-slide">
+							<a href="quting.html" target="_blank">
+								<dt class="cover">
+									<img src="images/cover-img1.png" alt=""><i class="icon"></i>
+								</dt>
+								<dd class="intro">
+									<p class="tit melli one">2血色黎明血色黎明血色黎明血色黎明血色黎明</p>
+									<p class="author melli one">演播：张勇 作者：张宏志</p>
+									<p class="txt melli three">精心打造，每期一个故事，情景化演绎，制作精良，强力推荐的有声剧！精心打造，每期一个故事，情景化演绎，精制作精良强力荐．．．</p>
+								</dd>
+							</a>
+						</dl>
+					</ul>
+				</div>
+				<!-- 纪实文学 -->
+			</div>
+		</div>
+		<!-- tab卡 -->
+		<script src="js/tab.js"></script>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<!-- 下拉加载 -->
+		<script src="js/idangerous.swiper.min.js"></script> 
+		<script src="js/pullLoading.js"></script>
+		<script>
+		$('.swiper-container').height($(window).height()-$('#nav').outerHeight());
+		// 分类列表选项卡
+		var tits = getNodes(getId("tabTit").childNodes);
+		var cons = getNodes(getId("tabCon").childNodes);
+		tab(tits,cons,"on",swiper);
+		// 下拉加载
+		var mySwiper=null;
+		swiper();
+		</script>
+	</body>
+</html>
